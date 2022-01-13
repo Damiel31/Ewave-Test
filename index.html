@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script src="/app/js/jquery.js" defer></script>
+    <script src="/app/js/script.js" defer></script>
+    <script src="/app/js/catImages.js" defer></script>
+    
+    <title>Just Cats | Ewave Test</title>
+</head>
+<body>
+    
+    <button class="backTop flex flex-jc-c "><img src="images/back-to-top-01.png" alt="Back-Button"></button>
+
+    <header class="header">
+        <div class="overlay"></div>
+        <nav class="flex flex-jc-sb flex-ai-c">
+            <a href="/" class="header__logo">
+                <img src="images/cat-logo.png" alt="Cat-Logo">
+            </a>
+
+            <a id="btnHamburger" href="#" class="header__menu open hide-for-desktop">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <div class="header__links hide-for-mobile">
+                <a href="#Home" style="color: #5D8AE2;">Home</a>
+                <a href="#About">About</a>
+            </div>
+        </nav>
+
+        <div class="header__menuModal">
+            <a href="#Home" style="color: #5D8AE2;">Home</a>
+            <a href="#About">About</a>
+        </div>
+    </header>
+
+    <section class="banner flex flex-jc-c">
+        <img src="images/cat-banner.jpg" alt="Cat-Banner">
+
+        <div class="banner__text">
+            <h1>Hands up! and pet this kitty</h1>
+            <p>While you're here take a look for more cats below</p>
+            <button class="meow">Let's go</button>
+        </div>
+    </section>
+
+    <section class="loadCats flex flex-jc-c flex-ai-c">
+        <h1>Kitty Section</h1>
+        <div class="loadCats__catImages">
+            <img src="" alt="cat" class="catImage">
+            <img src="" alt="cat" class="catImage img2">
+            <img src="" alt="cat" class="catImage img3">
+        </div>
+        <button class="load_more_catimage">Load more</button>
+    </section>
+
+    <footer class="flex flex-jc-c flex-ai-c">
+        &copy; Damiel Maquiling | Ewave Test 2022
+    </footer>
+
+</body>
+</html>

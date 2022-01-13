@@ -1,0 +1,31 @@
+.banner {
+    flex-direction: column;
+    text-align: center;
+    img {
+        width: 100%;
+        height: 28.125rem;
+        object-fit: cover;
+    }
+
+    &__text {
+        padding: 20px;
+        font-size: $font-med;
+    }
+
+    @include breakpoint-up(large){
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0 6.9375rem 0 6.9375rem;
+        align-items: center;
+        text-align: left;
+
+        img {
+            width: 50rem;
+            object-fit: cover;
+        }
+
+        button {
+            width: 50%;
+        }
+    }
+}

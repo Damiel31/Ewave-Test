@@ -1,0 +1,115 @@
+.header {
+    
+    //Hamburger open styles
+    &.open {
+
+        .overlay {
+            display: block;
+        }
+        .header__menuModal {
+            display: block;
+            margin-top: 150px;
+        }
+        .header__menu{
+            > span:first-child {
+                transform: rotate(45deg);
+            }
+    
+            > span:nth-child(2) {
+                opacity: 0;
+            }
+            > span:last-child {
+                transform: rotate(-45deg);
+            }
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: $white;
+        }
+    }
+
+    .overlay {
+        display: none;
+        opacity: 0;
+        position: fixed;
+        top: 110px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-image: linear-gradient($accentBlue, transparent);
+    }
+
+    nav {
+        padding: 20px;
+    }
+
+    &__logo {
+        img {
+            width: 5.625rem;
+            height: 5.625rem;
+            margin-left: -19px;
+            object-fit: contain;
+        }
+    }
+
+    &__menu { //hamburger menu
+        > span {
+            display: block;
+            width: 26px;
+            height: 2px;
+            background-color: $primaryBlue;
+            transition: all 300ms ease-in-out;
+            transform-origin: 3px 1px;
+
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+
+        
+    }
+
+    &__menuModal { //menu modal
+        display: none;
+        padding: 1.625rem;
+        position: fixed;
+        width: calc(100% - 3rem);
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 5px;
+        background: $white;
+
+        a {
+            display: block;
+            padding: 0.625rem;
+            color: $lightBlack;
+            text-align: center;
+
+            &:hover {
+                color: $secondaryBlue;
+            }
+        }
+    }
+
+    &__links {
+        a {
+            font-size: $font-med;
+            color: $lightBlack;
+            transition: color 200ms ease-in-out;
+            
+            &:not(:last-child){
+                margin-right: 32px;
+            }
+
+            &:hover {
+                color: $secondaryBlue;
+            }
+        }
+    }
+
+    @include breakpoint-up(large){
+        padding: 1.25rem 6.9375rem 1.25rem 6.9375rem;
+    }
+}
