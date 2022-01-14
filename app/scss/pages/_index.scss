@@ -28,7 +28,7 @@
         width: 50%;
     }
 
-    @include breakpoint-up(large){
+    @include breakpoint-up(medium){
         .loadCats {
             &__catImages {
                 display: flex;

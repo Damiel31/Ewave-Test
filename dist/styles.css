@@ -330,7 +330,7 @@ button:hover {
   width: 50%;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   .loadCats .loadCats__catImages {
     display: -webkit-box;
     display: -ms-flexbox;
