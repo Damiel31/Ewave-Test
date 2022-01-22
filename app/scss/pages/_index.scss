@@ -3,9 +3,10 @@
     padding: 1.25rem;
 
     &__catImages {
-        overflow: scroll;
+        overflow-y: scroll;
         height: 18.75rem;
         width: 18.75rem;
+        align-items: center;
         
         img {
             padding: 1.25rem;
@@ -20,7 +21,7 @@
         .img3{
             display: none;
         }
-
+       
     }
 
     button {
@@ -32,11 +33,15 @@
         .loadCats {
             &__catImages {
                 display: flex;
-                flex-direction: row;
-                justify-content: space-around;
+                flex-direction: column;
                 padding: 0 6.9375rem 0 6.9375rem;
                 height: 300px;
                 width: 100%;
+
+                .initialCats{
+                    display: flex;
+                    flex-direction: row;
+                }
 
                 .img2{
                     display: block;
